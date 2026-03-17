@@ -8,7 +8,7 @@ multi-wallet integration, Soroban smart contract, and live event streaming.
 | Requirement | Status |
 |---|---|
 | 3 error types handled | ✅ WalletNotFoundError, TransactionRejectedError, InsufficientBalanceError |
-| Contract deployed on testnet | ✅ `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC` |
+| Contract deployed on testnet | ✅ `CCZF67EHLKRBNV26OKTAB6RMFR44YCT6VLRV3JCJSZFIQVH4LE3SOH7T` |
 | Contract called from frontend | ✅ vote(), get_votes() |
 | Transaction status visible | ✅ 4-stage tracker |
 | 2+ meaningful commits | ✅ 30 commits |
@@ -20,8 +20,8 @@ multi-wallet integration, Soroban smart contract, and live event streaming.
 
 ## 📋 Deployed Contract
 
-- **Contract Address**: `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC`
-- **Deploy TX Hash**: `a1b2c3d4...`
+- **Contract Address**: `CCZF67EHLKRBNV26OKTAB6RMFR44YCT6VLRV3JCJSZFIQVH4LE3SOH7T`
+- **Deploy TX Hash**: `4042b6f9daa38608abbd3f8d01f402884987868d20d38b223b2daa07359cc55b`
 - **Network**: Stellar Testnet
 
 ## 🚀 Setup
