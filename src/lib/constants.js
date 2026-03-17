@@ -7,7 +7,7 @@ export const HORIZON_TESTNET_URL = "https://horizon-testnet.stellar.org";
 export const FRIENDBOT_URL = "https://friendbot.stellar.org";
 
 // ⚠️ Replace this after deploying your contract (Step 8)
-export const CONTRACT_ID = "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC";
+export const CONTRACT_ID = "CCZF67EHLKRBNV26OKTAB6RMFR44YCT6VLRV3JCJSZFIQVH4LE3SOH7T";
 
 // ═══════════════════════════════════════════════════════════════
 // Poll Configuration
