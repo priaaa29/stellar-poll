@@ -33,11 +33,56 @@ npm run dev
 
 ## 📁 Project Structure
 
-src/
-├── components/    # 8 UI components
-├── hooks/         # useWallet, useEvents
-├── lib/           # Stellar SDK, errors, events, wallet service
-├── App.jsx        # Main app
-└── main.jsx       # Entry point
-contracts/
-└── poll/          # Soroban smart contract (Rust)
+Good catch. Let me fix that for you. Open README.md in VS Code and replace the project structure section with this:
+markdown
+## 📁 Project Structure
+```
+stellar-poll/
+│
+├── contracts/
+│   └── poll/
+│       ├── Cargo.toml
+│       └── src/
+│           └── lib.rs                # Soroban smart contract
+│
+├── scripts/
+│   └── deploy.sh                     # Contract deployment script
+│
+├── src/
+│   ├── components/
+│   │   ├── ContractInfo.jsx          # Contract address display
+│   │   ├── ErrorToast.jsx            # Error notifications
+│   │   ├── EventFeed.jsx             # Live activity feed
+│   │   ├── Header.jsx                # App header + wallet status
+│   │   ├── Particles.jsx             # Background animation
+│   │   ├── PollOption.jsx            # Vote option button
+│   │   ├── TransactionTracker.jsx    # TX status progress
+│   │   ├── WalletModal.jsx           # Wallet selection modal
+│   │   └── index.js                  # Barrel exports
+│   │
+│   ├── hooks/
+│   │   ├── useWallet.js              # Wallet connection hook
+│   │   ├── useEvents.js              # Real-time events hook
+│   │   └── index.js                  # Barrel exports
+│   │
+│   ├── lib/
+│   │   ├── constants.js              # Config and network settings
+│   │   ├── errors.js                 # 3 custom error classes
+│   │   ├── events.js                 # Event system and streaming
+│   │   ├── stellar.js                # Stellar SDK helpers
+│   │   ├── walletService.js          # StellarWalletsKit integration
+│   │   └── index.js                  # Barrel exports
+│   │
+│   ├── App.jsx                       # Main application
+│   ├── App.css                       # Layout styles
+│   ├── index.css                     # Global theme
+│   └── main.jsx                      # React entry point
+│
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+├── vercel.json
+├── netlify.toml
+└── README.md
