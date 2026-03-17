@@ -1,0 +1,20 @@
+.contract-info {
+    background: var(--bg-secondary); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .contract-info-row { display: flex; align-items: center; gap: 8px; }
+  .contract-label {
+    font-size: 11px; font-weight: 600; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 0.5px; min-width: 70px;
+  }
+  .contract-value {
+    font-size: 12px; font-family: 'JetBrains Mono', monospace;
+    color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis;
+  }
+  .network-badge {
+    background: var(--accent-soft); color: var(--accent);
+    padding: 2px 8px; border-radius: 6px; font-weight: 600;
+  }
+  .contract-link { font-size: 12px; color: var(--accent); text-decoration: none; flex-shrink: 0; }
+  .contract-link:hover { text-decoration: underline; }
