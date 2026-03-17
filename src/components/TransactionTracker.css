@@ -1,0 +1,61 @@
+.tx-tracker {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    animation: fadeIn 0.3s ease;
+  }
+  .tx-tracker.tx-failed { border-color: var(--error); }
+  
+  .tx-tracker-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 16px;
+  }
+  .tx-tracker-title {
+    font-size: 13px; font-weight: 600; color: var(--text-secondary);
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .tx-explorer-link {
+    font-size: 12px; color: var(--accent); text-decoration: none;
+    font-weight: 500; font-family: 'JetBrains Mono', monospace;
+  }
+  .tx-explorer-link:hover { text-decoration: underline; }
+  
+  .tx-stages { display: flex; align-items: center; justify-content: space-between; }
+  .tx-stage {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 6px; position: relative; flex: 1;
+  }
+  .tx-stage-dot {
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; background: var(--bg-tertiary);
+    border: 2px solid var(--border); font-size: 12px;
+    color: var(--text-dim); transition: all 0.3s;
+  }
+  .tx-stage.active .tx-stage-dot {
+    border-color: var(--accent); background: var(--accent-soft);
+    color: var(--accent); box-shadow: 0 0 15px var(--accent-glow);
+    animation: txPulse 1.5s ease-in-out infinite;
+  }
+  .tx-stage.complete .tx-stage-dot {
+    background: var(--success); border-color: var(--success); color: #fff;
+  }
+  @keyframes txPulse {
+    0%, 100% { box-shadow: 0 0 15px var(--accent-glow); }
+    50% { box-shadow: 0 0 25px var(--accent-glow); }
+  }
+  .tx-stage-label { font-size: 11px; font-weight: 500; color: var(--text-dim); }
+  .tx-stage.active .tx-stage-label { color: var(--accent); }
+  .tx-stage.complete .tx-stage-label { color: var(--success); }
+  .tx-stage-line {
+    position: absolute; top: 16px;
+    left: calc(50% + 18px); right: calc(-50% + 18px);
+    height: 2px; background: var(--border);
+  }
+  .tx-stage-line.complete { background: var(--success); }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
