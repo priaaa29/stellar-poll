@@ -1,0 +1,29 @@
+.error-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #1a1020;
+    border: 1px solid var(--error);
+    border-left: 4px solid var(--error);
+    padding: 14px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    animation: slideInRight 0.35s ease;
+    max-width: 420px;
+    box-shadow: 0 4px 30px rgba(239, 68, 68, 0.15);
+  }
+  
+  @keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .error-icon { font-size: 20px; }
+  .error-content { display: flex; flex-direction: column; gap: 2px; }
+  .error-title { font-size: 12px; font-weight: 700; color: var(--error); }
+  .error-message { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+  .error-dismiss { font-size: 18px; color: var(--text-dim); margin-left: 8px; }
