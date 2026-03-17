@@ -3,7 +3,7 @@
 A real-time polling application built on the Stellar blockchain with
 multi-wallet integration, Soroban smart contract, and live event streaming.
 
-## ✅ Level 2 Requirements
+
 
 | Requirement | Status |
 |---|---|
@@ -16,7 +16,7 @@ multi-wallet integration, Soroban smart contract, and live event streaming.
 ## 🖼️ Screenshots
 
 ### Wallet Options
-![Wallet Modal](./docs/screenshot-wallet.png)
+![Wallet Modal](./docs/Screenshot-wallet.png)
 
 ## 📋 Deployed Contract
 
@@ -26,7 +26,7 @@ multi-wallet integration, Soroban smart contract, and live event streaming.
 
 ## 🚀 Setup
 
-git clone https://github.com/YOUR_USERNAME/stellar-poll.git
+git clone https://github.com/priaaa29/stellar-poll.git
 cd stellar-poll
 npm install
 npm run dev
